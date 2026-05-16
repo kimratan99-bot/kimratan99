@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MathChatbot from "@/components/MathChatbot";
 
 /* ──────────────────────────────────────────
    SEO & 메타데이터 설정
@@ -25,6 +26,9 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col">
         {/* ── 전체 페이지는 Header → Main → Footer 구조입니다 ── */}
         {children}
+        
+        {/* ── AI 수학 튜터 챗봇 ── */}
+        <MathChatbot />
       </body>
     </html>
   );
