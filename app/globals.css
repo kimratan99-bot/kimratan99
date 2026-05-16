@@ -1,11 +1,8 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* ──────────────────────────────────────────
-   Pretendard 웹폰트 (한국어 최적화)
-   ────────────────────────────────────────── */
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
 /* ──────────────────────────────────────────
    글로벌 기본 스타일
@@ -22,8 +19,7 @@
 
   body {
     @apply bg-slate-50 text-slate-800 antialiased;
-    font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", system-ui,
-      sans-serif;
+    font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
   }
 }
 
@@ -38,6 +34,4 @@
   .gradient-bg {
     @apply bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500;
   }
-
-  /* 여기에 커스텀 유틸리티 클래스를 추가하세요 */
 }
