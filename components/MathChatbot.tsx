@@ -27,7 +27,9 @@ export default function MathChatbot() {
     <>
       {/* ── 플로팅 버튼 ── */}
       <motion.button
-        whileHover={{ scale: 1.1 }}
+        initial={{ scale: 0, rotate: -180 }}
+        animate={{ scale: 1, rotate: 0 }}
+        whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600 text-white shadow-2xl hover:bg-indigo-700 transition-colors"
